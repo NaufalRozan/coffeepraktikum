@@ -49,7 +49,7 @@
                     <tbody>
                         <tr>
                             <td>{{ $loop->iteration }}</td>
-                            <td>{{ $kasir->id_kasir }}</td>
+                            <td>{{ $kasir->id }}</td>
                             <td>{{ $kasir->Email_Kasir }}</td>
                             <td>{{ $kasir->Nama_Kasir }}</td>
                             <td>{{ $kasir->Alamat_Kasir }}</td>
@@ -57,8 +57,8 @@
                             <td>{{ $kasir->id_pembayaran }}</td>
                             <td>{{ $kasir->id_nota }}</td>
                             <td>
-                                <a href="/kasir/{{$kasir->id_kasir}}/edit" class="btn btn-warning bgn-sm">Edit</a>
-                                <a href="/kasir/delete/{{$kasir->id_kasir}}" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Mau dihapus?')">Delete</a>
+                                <a href="/kasir/{{$kasir->id}}/edit" class="btn btn-warning bgn-sm">Edit</a>
+                                <a href="/kasir/delete/{{$kasir->id}}" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Mau dihapus?')">Delete</a>
                             </td>
                         </tr>
                     </tbody>
@@ -80,7 +80,7 @@
                                 {{ csrf_field() }}
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">ID Kasir</label>
-                                    <input name="id_kasir" class="form-control" id="exampleFormControlTextarea1" rows="1"></input>
+                                    <input name="id" class="form-control" id="exampleFormControlTextarea1" rows="1"></input>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email Kasir</label>

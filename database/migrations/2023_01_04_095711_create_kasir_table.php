@@ -14,7 +14,7 @@ class CreateKasirTable extends Migration
     public function up()
     {
         Schema::create('kasir', function (Blueprint $table) {
-            $table->id('id_kasir');
+            $table->id();
             $table->string('Email_Kasir');
             $table->string('Nama_Kasir');
             $table->string('Alamat_Kasir');

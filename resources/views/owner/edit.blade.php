@@ -22,7 +22,7 @@ origin="anonymous"> --}}
         @endif
         <h1 class="py-3">Edit Data Owner</h1>
         <div class="row">
-            <form method="post" action="/owner/{{$owner->id_owner}}/update">
+            <form method="post" action="/owner/{{$owner->id}}/update">
                 @csrf
                 <div class="form-group mb-3">
                     <label for="exampleInputEmail1">Nama Owner</label>

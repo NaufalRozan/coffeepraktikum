@@ -27,7 +27,7 @@ class OwnerController extends Controller
 
     public function update(Request $request, $id)
     {
-        $owner = \App\Models\Pembayaran::find($id);
+        $owner = \App\Models\Owner::find($id);
         $owner->update($request->all());
         return redirect('/owner')->with('Sukses', 'Data Berhasil diupdate');
     }   

@@ -47,14 +47,14 @@
                     <tbody>
                         <tr>
                             <td>{{ $loop->iteration }}</td>
-                            <td>{{ $owner->id_owner }}</td>
+                            <td>{{ $owner->id }}</td>
                             <td>{{ $owner->Nama_Owner }}</td>
                             <td>{{ $owner->Email_Owner }}</td>
                             <td>{{ $owner->Alamat_Owner }}</td>
                             <td>{{ $owner->id_kasir }}</td>
                             <td>
-                                <a href="/owner/{{$owner->id_owner}}/edit" class="btn btn-warning bgn-sm">Edit</a>
-                                <a href="/owner/delete/{{$owner->id_owner}}" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Mau dihapus?')">Delete</a>
+                                <a href="/owner/{{$owner->id}}/edit" class="btn btn-warning bgn-sm">Edit</a>
+                                <a href="/owner/delete/{{$owner->id}}" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Mau dihapus?')">Delete</a>
                             </td>
                         </tr>
                     </tbody>
@@ -76,7 +76,7 @@
                                 {{ csrf_field() }}
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">ID Owner</label>
-                                    <input name="id_owner" class="form-control" id="exampleFormControlTextarea1" rows="1"></input>
+                                    <input name="id" class="form-control" id="exampleFormControlTextarea1" rows="1"></input>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Nama Owner</label>
